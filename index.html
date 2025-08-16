@@ -53,6 +53,7 @@
         <ul class="social">
           <!-- GitHub picture/icon (commenting it out so it doesn’t show if you want later) -->
           <!-- <li><a href="https://github.com/CrimsonFoxx4" target="_blank"><i class="fa fa-github"></i></a></li> -->
+           <li><a href="https://www.linkedin.com/in/sotirios-gouliotis/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
         </ul>
       </div>
     </div>
@@ -253,5 +254,17 @@
   <script src="js/jquery.fittext.js"></script>
   <script src="js/magnific-popup.js"></script>
   <script src="js/init.js"></script>
+  <script>
+    // Placeholder for Cosmos DB integration
+    // In production, replace this with an API call to your backend that reads/increments the Cosmos DB counter
+    document.addEventListener('DOMContentLoaded', function() {
+      // Dummy local counter for now
+      let count = localStorage.getItem('visitorCount') || 0;
+      count++;
+      localStorage.setItem('visitorCount', count);
+      document.getElementById('visitorCount').textContent = count;
+      // TODO: Replace with fetch to backend API for Cosmos DB
+    });
+  </script>
 </body>
 </html>
