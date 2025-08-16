@@ -1,111 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Resume - Your Name</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2, h3, h4 {
-            font-weight: normal;
-            margin: 0 0 10px;
-            color: #333;
-        }
-        h1 {
-            font-size: 36px;
-            line-height: 1.2;
-        }
-        h2 {
-            font-size: 24px;
-            line-height: 1.2;
-        }
-        h3 {
-            font-size: 18px;
-            line-height: 1.2;
-        }
-        p {
-            margin: 0 0 10px;
-            line-height: 1.5;
-        }
-        ul {
-            margin: 0 0 10px 20px;
-            padding: 0;
-            list-style: disc;
-        }
-        ul li {
-            margin: 0 0 5px;
-            padding: 0;
-        }
-        .section {
-            margin: 0 0 20px;
-        }
-            .section:last-of-type {
-            margin: 0;
-        }
-        .section-header {
-            display: flex;
-            align-items: center;
-            margin: 0 0 10px;
-        }
-        .section-header h2 {
-            flex: 1;
-        }
-        .section-content {
-            margin: 0;
-        }
-        @media only screen and (max-width: 768px) {
-            h1 {
-                font-size: 28px;
-            }
-            h2 {
-                font-size: 20px;
-            }
-            h3 {
-                font-size: 16px;
-            }
-            .container {
-                padding: 10px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sotirios Gouliotis - Resume</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for GitHub icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Your Name</h1>
-            <p>Email: youremail@example.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Website: yourwebsite.com</p>
-            <hr>
-        </header>
-        
-        <section class="section">
-            <div class="section-header">
-                <h2>Summary</h2>
-            </div>
-            <div class="section-content">
-                <p>A highly motivated individual with experience in various fields, seeking an opportunity to utilize and further develop my skills in a challenging and dynamic environment.</p>
-            </div>
-        </section>
-        
-        <section class="section">
-            <div class="section-header">
-                <h2>Education</h2>
-            </div>
-            <div class="section-content">
-                <ul>
-                    <li>Bachelor of Science in Computer Science, University of XYZ, Graduated May 2021</li>
-                    <li>
-<body>
+  <div class="container">
+    <!-- Header section with your name, title, and contact info -->
+    <header>
+      <h1>Sotirios Gouliotis</h1>
+      <p class="title">SOC Analyst | Cybersecurity Engineer</p>
+      <div class="contact">
+<!--        <span>Email: sgouliotis@gmail.com</span> |
+        <span>Phone: +420 734775731</span> | -->
+        <span>Location: Prague, Czech Republic</span> |
+        <!-- GitHub link with icon (replace with your actual GitHub username if different) -->
+        <a href="https://github.com/CrimsonFoxx4" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </header>
+    <!-- Professional summary section -->
+    <section>
+      <h2>Summary</h2>
+      <p>
+        SOC Analyst and Cybersecurity Engineer with hands-on experience in SIEM, EDR, incident response, firewall management, and cloud security. Skilled in triaging security events, incident documentation, and process improvement. Strong technical background with a focus on continuous learning and professional development.
+      </p>
+    </section>
+    <!-- Work experience section -->
+    <section>
+      <h2>Experience</h2>
+      <div class="job">
+        <h3>SOC Analyst Level 1 <span>Accenture Services, Prague, CZ</span></h3>
+        <p class="date">Aug 2024 – Present</p>
+        <ul>
+          <li>Monitor security alerts from SIEM platforms and EDR tools for multiple clients.</li>
+          <li>Conduct initial triage of security incidents, analyzing logs and correlating events.</li>
+          <li>Participate in incident response, including Zero-Day vulnerability investigation.</li>
+          <li>Document findings and investigation steps in ticketing systems.</li>
+          <li>Assist in fine-tuning detection rules and improving SOC processes.</li>
+          <li>Analyze phishing emails and perform malware investigations.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Cybersecurity Engineer <span>Odyssey Cybersecurity Consultants LTD, Athens, GR</span></h3>
+        <p class="date">Jan 2024 – Jun 2024</p>
+        <ul>
+          <li>Configured and maintained security policies on Fortinet firewalls.</li>
+          <li>Analyzed network traffic with Fortinet FortiAnalyzer for alerts and troubleshooting.</li>
+          <li>Managed F5 Load Balancer and WAF Silverline.</li>
+          <li>Implemented VPN access and managed permissions via Active Directory and Firewall.</li>
+          <li>Managed Fortinet Sandbox and FortiMail systems for advanced threat protection.</li>
+          <li>Used Symantec DLP to safeguard sensitive information and ensure compliance.</li>
+          <li>Decommissioned Symantec Endpoint Security and applied Microsoft Defender Solution.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>SOC Analyst Level 1 <span>Odyssey Cybersecurity Consultants LTD, Athens, GR</span></h3>
+        <p class="date">Dec 2022 – Jan 2024</p>
+        <ul>
+          <li>Monitored security event alerts generated by SIEM systems.</li>
+          <li>Conducted triage and analysis of security alerts, following procedures and guidelines.</li>
+          <li>Investigated and responded to security incidents to mitigate risks.</li>
+          <li>Delegated confirmed incidents to client’s incident manager for further investigation.</li>
+          <li>Documented incident details and findings in incident reports.</li>
+          <li>Assisted in developing and refining security monitoring and incident response procedures.</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Education section -->
+    <section>
+      <h2>Education</h2>
+      <div class="education">
+        <h3>MSc in Computer and Network Security <span>Open University of Cyprus (Remote)</span></h3>
+        <p class="date">2022 – 2024</p>
+      </div>
+      <div class="education">
+        <h3>BSc in Music Technology & Acoustics Engineering <span>Hellenic Mediterranean University, Greece</span></h3>
+        <p class="date">2013 – 2021</p>
+      </div>
+    </section>
+    <!-- Certifications section -->
+    <section>
+      <h2>Certifications</h2>
+      <ul class="skills">
+        <li>Microsoft: Azure Security Engineer Associate AZ-500 (in progress)</li>
+        <li>Microsoft: Azure Administrator Associate AZ-104</li>
+        <li>Microsoft: Azure Fundamentals AZ-900 (2025)</li>
+        <li>Splunk Core Certified Power User (2024)</li>
+        <li>Splunk Core Certified User (2024)</li>
+        <li>Fortinet Certified Associate Cybersecurity - FCA (2024)</li>
+        <li>Fortinet Certified Fundamentals Cybersecurity - FCF (2024)</li>
+      </ul>
+    </section>
+    <!-- Technical Knowledge section -->
+    <section>
+      <h2>Technical Knowledge</h2>
+      <ul class="skills">
+        <li>Network Security: Firewall (FortiManager), VPN (FortiClient)</li>
+        <li>Operating Systems: Windows, Linux</li>
+        <li>Programming: C/C++, Python, HTML, CSS</li>
+        <li>Security Tools: Tanium, Microsoft Defender, Qualys, Trellix</li>
+        <li>SIEM: Splunk, Microsoft Sentinel, Google Security Operations</li>
+      </ul>
+    </section>
+    <!-- Languages section -->
+    <section>
+      <h2>Languages</h2>
+      <ul class="skills">
+        <li>English - B2 Level</li>
+        <li>Greek - Native</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
