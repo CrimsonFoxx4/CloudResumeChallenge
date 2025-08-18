@@ -9,7 +9,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
     #Connection to Cosmos DB
     endpoint = os.environ["https://dbsgouliotisgr.documents.azure.com:443/"]
-    key = os.environ["7rCz9x6O2ZVefjNH8R3a7vMi2bQ8z85TaBIm51QmR4nCMa1Mdl2Ybtrr88u8yhypDW9yVI7f5ATeACDbK4FcRw=="]
+    key = os.environ["AccountEndpoint=https://dbsgouliotisgr.documents.azure.com:443/;AccountKey=7rCz9x6O2ZVefjNH8R3a7vMi2bQ8z85TaBIm51QmR4nCMa1Mdl2Ybtrr88u8yhypDW9yVI7f5ATeACDbK4FcRw==;"]
     client = CosmosClient(endpoint, key)
 
     database_name = "dbforvisitorssgouliotisgr "
