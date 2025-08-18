@@ -27,11 +27,10 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         item["visits"] += 1
         container.replace_item(item=item, body=item)
     except:
-        # If the item does not exist, create it
-        item = {"id": "counter", "partitionKey": "counter", "visits": 1}
+        item = {"id": item_id, "partitionKey": partition_key, "visits": 1}
         container.create_item(body=item)
 
     return func.HttpResponse(
         json.dumps({"visits": item["visits"]}),
         mimetype="application/json"
-    )
+    )   
