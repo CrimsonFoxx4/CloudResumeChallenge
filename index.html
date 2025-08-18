@@ -7,14 +7,6 @@
 
   
 
-<script>
-  fetch("https://<το-function-app-name>.azurewebsites.net/api/counterforsgouliotisgr")
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById("visitorCounter").innerText = data.visits;
-    });
-</script>
-<p>Visitors: <span id="visitorCounter">0</span></p>
 
 
   <!-- CSS styles that control the look of the site -->
@@ -109,6 +101,19 @@
       </div>
     </div>
   </section>
+
+  <!-- ================== VISITOR COUNTER ================== -->
+  <!-- This section fetches the visitor count from Azure Function App -->
+  <script>
+  fetch("https://<το-function-app-name>.azurewebsites.net/api/counterforsgouliotisgr")
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById("visitorCounter").innerText = data.visits;
+    });
+</script>
+<p>Visitors: <span id="visitorCounter">0</span></p>
+
+
 
   <!-- ================== RESUME SECTION ================== -->
   <section id="resume">
