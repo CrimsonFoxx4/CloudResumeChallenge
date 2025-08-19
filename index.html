@@ -59,7 +59,7 @@
           </div>
 
           <script>
-          fetch("YOUR_AZURE_FUNCTION_URL")
+          fetch("https://visitorcounterprod-grhtbpdfekfwdrdq.westeurope-01.azurewebsites.net/api/visitorcounterprod?code=SAu7ug2xweRonQoAfk4ce0xgF-HuG3t8075naE7pNZbWAzFuLkyPbA%3D%3D")
           .then(res => res.json())
           .then(data => {
             document.getElementById("visit-count").textContent = data.count;

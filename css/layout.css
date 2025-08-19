@@ -230,28 +230,12 @@ ul#nav li.current a { color: #F06000; }
    font-size: 20px;
 }
 
-<div id="visitor-counter">
-  So far <span id="visit-count">0</span> have visited this site
-</div>
-
-<style>
 #visitor-counter {
   margin-top: 10px; /* Απόσταση από το LinkedIn section */
   font-size: 14px;
   color: #555;
   text-align: center; /* Κεντράρει το κείμενο */
 }
-</style>
-
-<script>
-fetch("YOUR_AZURE_FUNCTION_URL")
-  .then(res => res.json())
-  .then(data => {
-    document.getElementById("visit-count").textContent = data.count;
-  })
-  .catch(err => console.error(err));
-</script>
-
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
