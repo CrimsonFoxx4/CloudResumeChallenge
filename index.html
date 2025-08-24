@@ -257,39 +257,40 @@
   <script src="js/init.js"></script>
 
   <!-- VISITOR COUNTER SCRIPT -->
-  <script>
-  document.addEventListener('DOMContentLoaded', async () => {
-    const el = document.getElementById('visitorCount');
-    el.textContent = 'Loading…';
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+  const el = document.getElementById('visitorCount');
+  el.textContent = 'Loading…';
 
-    // Base URL from Azure Portal (with code=… if not anonymous)
-    const baseUrl = 
-      'https://visitorcountersgouliotis-hkagg8b9anfucdc9.westeurope-01.azurewebsites.net/api/visitorcountersgouliotis?';
+  // Your function URL (include ?code=… if not anonymous)
+  const functionUrl =
+    'https://visitorcountersgouliotis-hkagg8b9anfucdc9.westeurope-01.azurewebsites.net/api/visitorcountersgouliotis?';';
 
-    // Append a timestamp to bust caches
-    const url = `${baseUrl}&_=${Date.now()}`;
+  // Append a changing timestamp so neither browser nor CDN/proxy can cache it
+  const url = `${functionUrl}&_=${Date.now()}`;
 
-    try {
-      const response = await fetch(url, {
-        method: 'GET',
-        cache: 'no-store'      // tell the browser not to use any cached response
-      });
+  try {
+    const response = await fetch(url, {
+      method: 'GET',
+      cache:  'reload'   // force a fresh network request
+    });
 
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status}`);
-      }
-
-      const data = await response.json();
-      console.log('Function returned:', data);
-
-      // pick the right field name
-      const count = data.counter ?? data.visitors;
-      el.textContent = count;
-    } catch (err) {
-      console.error('Fetch error:', err);
-      el.textContent = '–';
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
     }
-  });
+
+    const data = await response.json();
+    console.log('Azure Function returned:', data);
+
+    // Pick the correct field name (counter or visitors)
+    const count = data.counter ?? data.visitors;
+    el.textContent = count;
+  }
+  catch (err) {
+    console.error('Fetch error:', err);
+    el.textContent = '–';
+  }
+});
 </script>
 
 
