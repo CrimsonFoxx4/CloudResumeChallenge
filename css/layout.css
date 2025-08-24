@@ -237,28 +237,6 @@ ul#nav li.current a { color: #F06000; }
   text-align: center; /* centers text */
 }
 
- 
-window.onload = function() {
-                fetch('https://visitorcountersgouliotis-hkagg8b9anfucdc9.westeurope-01.azurewebsites.net/api/visitorcountersgouliotis?')
-        .then(response => {
-            // Check if the request was successful
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            // Extract the counter value
-            document.getElementById("visitorCount").innerText = data.counter
-            // You can then use 'counter' as needed in your application
-        })
-        .catch(error => {
-            document.getElementById("visitorCount").innerText = "-"
-            console.error('There was a problem with your fetch operation:', error);
-        });
-  };
-
-
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
