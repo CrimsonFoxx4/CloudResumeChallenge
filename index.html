@@ -258,29 +258,40 @@
 
   <!-- VISITOR COUNTER SCRIPT -->
   <script>
-    document.addEventListener('DOMContentLoaded', async () => {
-      const el = document.getElementById('visitorCount');
-      el.textContent = 'Loading…';
+  document.addEventListener('DOMContentLoaded', async () => {
+    const el = document.getElementById('visitorCount');
+    el.textContent = 'Loading…';
 
-      try {
-        const response = await fetch(
-          'https://visitorcountersgouliotis-hkagg8b9anfucdc9.westeurope-01.azurewebsites.net/api/visitorcountersgouliotis?'
-        );
-        if (!response.ok) {
-          throw new Error(`HTTP ${response.status}`);
-        }
-        const data = await response.json();
-        console.log('Azure Function returned:', data);
+    // Base URL from Azure Portal (with code=… if not anonymous)
+    const baseUrl = 
+      'https://visitorcountersgouliotis-hkagg8b9anfucdc9.westeurope-01.azurewebsites.net/api/visitorcountersgouliotis?';
 
-        // pick the correct field name:
-        const count = data.counter ?? data.visitors;
-        el.textContent = count;
-      } catch (err) {
-        console.error('Fetch error:', err);
-        el.textContent = '–';
+    // Append a timestamp to bust caches
+    const url = `${baseUrl}&_=${Date.now()}`;
+
+    try {
+      const response = await fetch(url, {
+        method: 'GET',
+        cache: 'no-store'      // tell the browser not to use any cached response
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
       }
-    });
-  </script>
+
+      const data = await response.json();
+      console.log('Function returned:', data);
+
+      // pick the right field name
+      const count = data.counter ?? data.visitors;
+      el.textContent = count;
+    } catch (err) {
+      console.error('Fetch error:', err);
+      el.textContent = '–';
+    }
+  });
+</script>
+
 
 </body>
 </html>
