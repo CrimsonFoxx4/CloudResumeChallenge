@@ -237,9 +237,9 @@ ul#nav li.current a { color: #F06000; }
   text-align: center; /* centers text */
 }
 
-/* 
+ 
 window.onload = function() {
-                fetch('https://resumefunction59939new.azurewebsites.net/api/resume_counter?code=oeRwhdElrOPSqf3z3by-TyQO5bCZ3OsOdLqZMVK4eua9AzFuUoUWyw==')
+                fetch('https://visitorcountersgouliotis-hkagg8b9anfucdc9.westeurope-01.azurewebsites.net/api/visitorcountersgouliotis?')
         .then(response => {
             // Check if the request was successful
             if (!response.ok) {
@@ -257,7 +257,7 @@ window.onload = function() {
             console.error('There was a problem with your fetch operation:', error);
         });
   };
-*/
+
 
 
 /* ------------------------------------------------------------------ */
