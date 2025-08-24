@@ -54,7 +54,14 @@
           <a href="https://www.linkedin.com/in/sotirios-gouliotis/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>&nbsp;|&nbsp;
           <a href="https://github.com/CrimsonFoxx4" target="_blank"><i class="fab fa-github"></i> GitHub</a>
           
+            <!-- ================== VISITOR COUNTER ================== -->
+            <!-- This section fetches the visitor count from Azure Function App -->
+
+        <div>
+            So far <span id="visitorCount">0</span> people have visited this site.
         </div>
+        
+      </div>
         </h3>
         
         <!-- Social icons (GitHub here, you can add LinkedIn etc. if you want) -->
@@ -103,8 +110,6 @@
     </div>
   </section>
 
-  <!-- ================== VISITOR COUNTER ================== -->
-  <!-- This section fetches the visitor count from Azure Function App -->
 
 
   <!-- ================== RESUME SECTION ================== -->
@@ -282,6 +287,8 @@
     const el = document.getElementById('visitorCount');
     el.textContent = 'Loading…';
 
+
+    
     fetch('https://visitorcountersgouliotis-hkagg8b9anfucdc9.westeurope-01.azurewebsites.net/api/visitorcountersgouliotis')
       .then(response => {
         if (!response.ok) {
