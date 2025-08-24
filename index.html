@@ -2,77 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Sotirios Gouliotis - Resume</title>
+  <title>Sotirios Gouliotis – Resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
-
-
-
-  <!-- CSS styles that control the look of the site -->
+  <!-- CSS styles -->
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/media-queries.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/fonts.css">
-  
-  <!-- Font Awesome for icons (like GitHub logo, download icon, etc.) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
   <!-- ================== HEADER ================== -->
   <header id="home">
-    <!-- Navigation bar at the top -->
     <nav id="nav-wrap">
-      <!-- These two are buttons that show/hide nav menu on mobile -->
       <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
       <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-      
-      <!-- Main nav menu -->
       <ul id="nav" class="nav">
         <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
         <li><a class="smoothscroll" href="#about">About</a></li>
         <li><a class="smoothscroll" href="#resume">Resume</a></li>
-<!--        <li><a class="smoothscroll" href="#contact">Contact</a></li> -->
       </ul>
     </nav>
 
-    <!-- Banner = big section with your name + title -->
     <div class="row banner">
       <div class="banner-text">
         <h1 class="responsive-headline">Sotirios Gouliotis</h1>
         <h3>
-          <!-- Email + phone commented out so they don't show -->
           <span>Email:</span> sgouliotis@gmail.com &nbsp;|&nbsp;
-                
-          <!-- Shows location -->
           <span>Location:</span> Prague, Czech Republic
         </h3>
-        <!-- Social/professional links below -->
-        <div style="margin-top: 0.5em;">
-          <a href="https://www.linkedin.com/in/sotirios-gouliotis/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>&nbsp;|&nbsp;
-          <a href="https://github.com/CrimsonFoxx4" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-          
-            <!-- ================== VISITOR COUNTER ================== -->
-            <!-- This section fetches the visitor count from Azure Function App -->
 
-        <div>
-            So far <span id="visitorCount">0</span> people have visited this site.
+        <!-- VISITOR COUNTER (moved outside the <h3>) -->
+        <div class="visitor-counter">
+          So far <span id="visitorCount">0</span> people have visited this site.
         </div>
-        
-      </div>
-        </h3>
-        
-        <!-- Social icons (GitHub here, you can add LinkedIn etc. if you want) -->
+
         <ul class="social">
-          <!-- GitHub picture/icon (commenting it out so it doesn’t show if you want later) -->
-          <!-- <li><a href="https://github.com/CrimsonFoxx4" target="_blank"><i class="fa fa-github"></i></a></li> -->
+          <li>
+            <a href="https://www.linkedin.com/in/sotirios-gouliotis/" target="_blank">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/CrimsonFoxx4" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </li>
         </ul>
       </div>
     </div>
 
-    <!-- Scroll down arrow (takes you to About section) -->
     <p class="scrolldown">
       <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
     </p>
@@ -82,50 +68,37 @@
   <section id="about">
     <div class="row">
       <div class="three columns">
-        <!-- Profile pic goes here if you want to show it -->
-        <!-- <img class="profile-pic" src="images/profilepic.jpg" alt="Profile Picture" /> -->
+        <!-- Optional profile pic -->
       </div>
       <div class="nine columns main-col">
         <h2>About Me</h2>
         <p>
-          SOC Analyst and Cybersecurity Engineer with hands-on experience in SIEM, EDR, incident response and firewall management. Skilled in triaging security events, incident documentation, and process improvement. Strong technical background with a focus on continuous learning and professional development.
+          SOC Analyst and Cybersecurity Engineer with hands-on experience in SIEM,
+          EDR, incident response and firewall management. Skilled in triaging
+          security events, incident documentation, and process improvement.
+          Strong technical background with a focus on continuous learning and
+          professional development.
         </p>
-        <div class="row">
-          <div class="columns contact-details">
-<!---            <h2>Contact Details</h2>
-            <p class="address">
-              <span>Sotirios Gouliotis</span><br>
-              <span>Prague, Czech Republic</span><br> -->
-<!--              <span>sgouliotis@gmail.com</span> -->
-            </p>
-          </div>
-          <div class="columns download">
-            <!-- Download resume button -->
-<!--            <p>
-              <a href="resume.html" class="button" download><i class="fa fa-download"></i>Download Resume</a>
-            </p> -->
-          </div>
-        </div>
       </div>
     </div>
   </section>
 
-
-
   <!-- ================== RESUME SECTION ================== -->
   <section id="resume">
-
-    <!-- ====== Work Experience ====== -->
+    <!-- Work Experience -->
     <div class="row work">
       <div class="three columns header-col">
         <h1><span>Work</span></h1>
       </div>
       <div class="nine columns main-col">
-        <!-- Each "row item" is one job -->
+        <!-- Job 1 -->
         <div class="row item">
           <div class="twelve columns">
             <h3>Accenture Services, Prague, CZ</h3>
-            <p class="info">SOC Analyst Level 1 <span>&bull;</span> <em class="date">Aug 2024 – Present</em></p>
+            <p class="info">
+              SOC Analyst Level 1 <span>&bull;</span>
+              <em class="date">Aug 2024 – Present</em>
+            </p>
             <ul>
               <li>Monitor security alerts from SIEM platforms and EDR tools for multiple clients.</li>
               <li>Conduct initial triage of security incidents, analyzing logs and correlating events.</li>
@@ -137,10 +110,14 @@
           </div>
         </div>
 
+        <!-- Job 2 -->
         <div class="row item">
           <div class="twelve columns">
             <h3>Odyssey Cybersecurity Consultants LTD, Athens, GR</h3>
-            <p class="info">Cybersecurity Engineer <span>&bull;</span> <em class="date">Jan 2024 – Jun 2024</em></p>
+            <p class="info">
+              Cybersecurity Engineer <span>&bull;</span>
+              <em class="date">Jan 2024 – Jun 2024</em>
+            </p>
             <ul>
               <li>Configured and maintained security policies on Fortinet firewalls.</li>
               <li>Analyzed network traffic with Fortinet FortiAnalyzer for alerts and troubleshooting.</li>
@@ -153,10 +130,14 @@
           </div>
         </div>
 
+        <!-- Job 3 -->
         <div class="row item">
           <div class="twelve columns">
             <h3>Odyssey Cybersecurity Consultants LTD, Athens, GR</h3>
-            <p class="info">SOC Analyst Level 1 <span>&bull;</span> <em class="date">Dec 2022 – Jan 2024</em></p>
+            <p class="info">
+              SOC Analyst Level 1 <span>&bull;</span>
+              <em class="date">Dec 2022 – Jan 2024</em>
+            </p>
             <ul>
               <li>Monitored security event alerts generated by SIEM systems.</li>
               <li>Conducted triage and analysis of security alerts, following procedures and guidelines.</li>
@@ -170,7 +151,7 @@
       </div>
     </div>
 
-    <!-- ====== Education ====== -->
+    <!-- Education -->
     <div class="row education">
       <div class="three columns header-col">
         <h1><span>Education</span></h1>
@@ -179,19 +160,27 @@
         <div class="row item">
           <div class="twelve columns">
             <h3>Open University of Cyprus (Remote)</h3>
-            <p class="info">MSc in Computer and Network Security <span>&bull;</span> <em class="date">2022 – 2024</em></p>
+            <p class="info">
+              MSc in Computer and Network Security
+              <span>&bull;</span>
+              <em class="date">2022 – 2024</em>
+            </p>
           </div>
         </div>
         <div class="row item">
           <div class="twelve columns">
             <h3>Hellenic Mediterranean University, Greece</h3>
-            <p class="info">BSc in Music Technology & Acoustics Engineering <span>&bull;</span> <em class="date">2013 – 2021</em></p>
+            <p class="info">
+              BSc in Music Technology & Acoustics Engineering
+              <span>&bull;</span>
+              <em class="date">2013 – 2021</em>
+            </p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- ====== Certifications ====== -->
+    <!-- Certifications -->
     <div class="row skill">
       <div class="three columns header-col">
         <h1><span>Certifications</span></h1>
@@ -207,9 +196,9 @@
           <li>Fortinet Certified Fundamentals Cybersecurity - FCF (2024)</li>
         </ul>
       </div>
-    </div>  
+    </div>
 
-    <!-- ====== Technical Knowledge ====== -->
+    <!-- Skills -->
     <div class="row skill">
       <div class="three columns header-col">
         <h1><span>Skills</span></h1>
@@ -225,88 +214,73 @@
       </div>
     </div>
 
-    <!-- ====== Languages ====== -->
+    <!-- Languages -->
     <div class="row skill">
       <div class="three columns header-col">
         <h1><span>Languages</span></h1>
       </div>
       <div class="nine columns main-col">
         <ul class="skills">
-          <li>English - B2 Level</li>
-          <li>Greek - Native</li>
+          <li>English – B2 Level</li>
+          <li>Greek – Native</li>
         </ul>
       </div>
     </div>
-
   </section>
 
-  <!-- ================== CONTACT SECTION (currently hidden/commented) ================== -->
-  <!-- You can re-enable this whole section if you want a contact form -->
-  <!-- <section id="contact"> ... </section> -->
-
-  <!-- ================== FOOTER ================== -->
+  <!-- FOOTER -->
   <footer>
     <div class="row">
       <div class="twelve columns">
         <ul class="social-links">
-          <!-- GitHub icon at bottom (commenting out to hide it) -->
-          <!-- <li><a href="https://github.com/CrimsonFoxx4" target="_blank"><i class="fa fa-github"></i></a></li> -->
+          <!-- optional footer icons -->
         </ul>
       </div>
-      <!-- Button to scroll back up -->
-      <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+      <div id="go-top">
+        <a class="smoothscroll" title="Back to Top" href="#home">
+          <i class="icon-up-open"></i>
+        </a>
+      </div>
     </div>
   </footer>
 
-  <!-- ================== JAVASCRIPT ================== -->
-  <!-- These scripts add animations, smooth scrolling, popup effects, etc. -->
+  <!-- JAVASCRIPT LIBRARIES -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-  <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>');
+  </script>
+  <script src="js/jquery-migrate-1.2.1.min.js"></script>
   <script src="js/jquery.flexslider.js"></script>
   <script src="js/waypoints.js"></script>
   <script src="js/jquery.fittext.js"></script>
   <script src="js/magnific-popup.js"></script>
   <script src="js/init.js"></script>
+
+  <!-- VISITOR COUNTER SCRIPT -->
   <script>
-    // Placeholder for Cosmos DB integration
-    // In production, replace this with an API call to your backend that reads/increments the Cosmos DB counter
-    document.addEventListener('DOMContentLoaded', function() {
-      // Dummy local counter for now
-      let count = localStorage.getItem('visitorCount') || 0;
-      count++;
-      localStorage.setItem('visitorCount', count);
-      document.getElementById('visitorCount').textContent = count;
-      // TODO: Replace with fetch to backend API for Cosmos DB
-    });
-  </script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const el = document.getElementById('visitorCount');
+      el.textContent = 'Loading…';
 
-  <!-- Fetch visitor count from Azure Function App -->
-  <script>
-  window.addEventListener('DOMContentLoaded', () => {
-    const el = document.getElementById('visitorCount');
-    el.textContent = 'Loading…';
-
-
-    
-    fetch('https://visitorcountersgouliotis-hkagg8b9anfucdc9.westeurope-01.azurewebsites.net/api/visitorcountersgouliotis')
-      .then(response => {
+      try {
+        const response = await fetch(
+          'https://visitorcountersgouliotis-hkagg8b9anfucdc9.westeurope-01.azurewebsites.net/api/visitorcountersgouliotis?'
+        );
         if (!response.ok) {
           throw new Error(`HTTP ${response.status}`);
         }
-        return response.json();
-      })
-      .then(data => {
-        // The function returns {"visitors": <number>}
-        el.textContent = data.visitors;
-      })
-      .catch(error => {
-        console.error('Fetch error:', error);
-        el.textContent = '–';
-      });
-  });
-</script>
+        const data = await response.json();
+        console.log('Azure Function returned:', data);
 
+        // pick the correct field name:
+        const count = data.counter ?? data.visitors;
+        el.textContent = count;
+      } catch (err) {
+        console.error('Fetch error:', err);
+        el.textContent = '–';
+      }
+    });
+  </script>
 
 </body>
 </html>
