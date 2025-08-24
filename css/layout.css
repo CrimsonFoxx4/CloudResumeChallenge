@@ -231,11 +231,34 @@ ul#nav li.current a { color: #F06000; }
 }
 
 #visitor-counter {
-  margin-top: 10px; /* Απόσταση από το LinkedIn section */
+  margin-top: 10px; /* distance from linkedin and github */
   font-size: 14px;
   color: #555;
-  text-align: center; /* Κεντράρει το κείμενο */
+  text-align: center; /* centers text */
 }
+
+/* 
+window.onload = function() {
+                fetch('https://resumefunction59939new.azurewebsites.net/api/resume_counter?code=oeRwhdElrOPSqf3z3by-TyQO5bCZ3OsOdLqZMVK4eua9AzFuUoUWyw==')
+        .then(response => {
+            // Check if the request was successful
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Extract the counter value
+            document.getElementById("visitorCount").innerText = data.counter
+            // You can then use 'counter' as needed in your application
+        })
+        .catch(error => {
+            document.getElementById("visitorCount").innerText = "-"
+            console.error('There was a problem with your fetch operation:', error);
+        });
+  };
+*/
+
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
