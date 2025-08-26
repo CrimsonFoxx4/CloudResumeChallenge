@@ -230,7 +230,7 @@ ul#nav li.current a { color: #f76300; }
 }
 
 #visitor-counter {
-  margin-top: 10px; /* distance from linkedin and github */
+ * margin-top: 10px; /* distance from linkedin and github */
   font-size: 14px;
   color: #555;
   text-align: center; /* centers text */
@@ -290,7 +290,9 @@ ul#nav li.current a { color: #f76300; }
 /* ------------------------------------------------------------------ */
 /* Projects Section
 /* ------------------------------------------------------------------ */
-
+#projects {
+  scroll-margin-top: 80px; /* Match your header height */
+}
 .projects li {
   margin-bottom: 18px;
   font-size: 15px;
@@ -1038,5 +1040,5 @@ footer .social-links li:first-child { margin-left: 0; }
    line-height: 60px;
  	border-radius: 100%;
 }
-#go-top a:hover { background-color: #0F9095; }
+#go-top a:hover { background-color: #e25300; }
 
