@@ -52,7 +52,7 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 30px;
    text-align: center;
 }
 
@@ -109,7 +109,6 @@ header .scrolldown a {
    width: 42px;
    font-size: 42px;
    line-height: 42px;
-   color: #fff;
    border-radius: 100%;
 
    -webkit-transition: all .3s ease-in-out;
@@ -292,52 +291,27 @@ ul#nav li.current a { color: #F06000; }
 /* Projects Section
 /* ------------------------------------------------------------------ */
 
-#projects {
-  background: #f4f4f4;
+.project {
   padding: 90px 0 60px;
-  color: #333;
 }
 
-#projects h1 {
-  font: 18px/24px 'opensans-bold', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
+.projects {
+  margin-left: 0;
+  list-style: none;
+}
+
+.projects li {
   margin-bottom: 18px;
-  color: #11ABB0;
-}
-
-#projects .lead {
-  font-size: 16px;
-  text-align: center;
-  color: #666;
-  margin-bottom: 48px;
-}
-
-.projects-content {
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
-}
-
-.project-item {
-  background: #fff;
-  padding: 24px;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.project-item h3 {
-  font: 20px 'opensans-bold', sans-serif;
-  margin-bottom: 12px;
-  color: #333;
-}
-
-.project-item p {
   font-size: 15px;
   line-height: 24px;
   color: #666;
 }
+
+.projects li strong {
+  color: #11ABB0;
+  font-weight: bold;
+}
+
 
 
 /*----------------------------------------------*/
