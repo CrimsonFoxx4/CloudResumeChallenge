@@ -1,3 +1,4 @@
+@ -1,1014 +1,1066 @@
 /*
 =====================================================================
 *   Ceevee v1.0 Layout Stylesheet
@@ -52,7 +53,7 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;
+   padding-bottom: 30px;s
    text-align: center;
 }
 
@@ -109,6 +110,7 @@ header .scrolldown a {
    width: 42px;
    font-size: 42px;
    line-height: 42px;
+   color: #fff;
    border-radius: 100%;
 
    -webkit-transition: all .3s ease-in-out;
@@ -230,7 +232,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 #visitor-counter {
- * margin-top: 10px; /* distance from linkedin and github */
+  margin-top: 10px; /* distance from linkedin and github */
   font-size: 14px;
   color: #555;
   text-align: center; /* centers text */
@@ -270,7 +272,7 @@ ul#nav li.current a { color: #F06000; }
 .education, .work {
    margin-bottom: 48px;
    padding-bottom: 24px;
-   /*border-bottom: 1px solid #E8E8E8; */
+   border-bottom: 1px solid #E8E8E8;
 }
 #resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
@@ -290,36 +292,54 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 /* Projects Section
 /* ------------------------------------------------------------------ */
+
 #projects {
-  scroll-margin-top: 80px; /* Match your header height */
-  
+  background: #f4f4f4;
+  padding: 90px 0 60px;
+  color: #333;
 }
 
-.projects li {
+#projects h1 {
+  font: 18px/24px 'opensans-bold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
   margin-bottom: 18px;
-  font-size: 15px;
-  line-height: 24px;
+  color: #11ABB0;
+}
+
+#projects .lead {
+  font-size: 16px;
+  text-align: center;
   color: #666;
+  margin-bottom: 48px;
 }
 
-.projects li strong {
-  color: #000000;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 1.5;
-  display: inline-block;
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
 }
 
-.projects li.highlight h3 {
-  font: 25px/30px 'opensans-bold', sans-serif;
+.project-item {
+  background: #fff;
+  padding: 24px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.project-item h3 {
+  font: 20px 'opensans-bold', sans-serif;
   margin-bottom: 12px;
-  color: #000000;
+  color: #333;
 }
-.projects li.highlight p {
+
+.project-item p {
   font-size: 15px;
   line-height: 24px;
   color: #666;
 }
+
 
 /*----------------------------------------------*/
 /*	Skill Bars
@@ -941,13 +961,32 @@ call-to-action .button {
 }
 
 
+/* Twitter Feed */
+#twitter {
+   margin-top: 12px;
+   padding: 0;
+}
+#twitter li {
+   margin: 6px 0px 12px 0;
+   line-height: 30px;
+}
+#twitter li span {
+   display: block;
+}
+#twitter li b a {
+   font: 13px/36px 'opensans-regular', Sans-serif;
+   color: #474747 !important;
+   border: none;
+}
+
+
 /* ------------------------------------------------------------------ */
 /* i. Footer
 /* ------------------------------------------------------------------ */
 
 footer {
-   padding-top: 80px;
-   margin-bottom: 80px;
+   padding-top: 48px;
+   margin-bottom: 48px;
    color: #303030;
    font-size: 14px;
    text-align: center;
@@ -975,7 +1014,7 @@ footer .copyright li:before {
     content: "\2022";
     padding-left: 10px;
     padding-right: 10px;
-    color: #F06000;
+    color: #095153;
 }
 footer .copyright  li:first-child:before {
     display: none;
@@ -1023,5 +1062,5 @@ footer .social-links li:first-child { margin-left: 0; }
    line-height: 60px;
  	border-radius: 100%;
 }
-#go-top a:hover { background-color: #e25300; }
+#go-top a:hover { background-color: #0F9095; }
 
