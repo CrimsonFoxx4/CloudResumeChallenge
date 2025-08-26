@@ -178,7 +178,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-/* ul#nav li.current a { color: #F06000; } */
+ul#nav li.current a { color: #F06000; }
 
 
 /* ------------------------------------------------------------------ */
@@ -270,7 +270,8 @@ ul#nav li a:active { background-color: transparent !important; }
 .education, .work {
    margin-bottom: 48px;
    padding-bottom: 24px;
-   border-bottom: 1px solid #E8E8E8;
+   /*border-bottom: 1px solid #E8E8E8; */
+   
 }
 #resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
@@ -292,7 +293,9 @@ ul#nav li a:active { background-color: transparent !important; }
 /* ------------------------------------------------------------------ */
 #projects {
   scroll-margin-top: 80px; /* Match your header height */
+  
 }
+
 .projects li {
   margin-bottom: 18px;
   font-size: 15px;
@@ -944,8 +947,8 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 footer {
-   padding-top: 48px;
-   margin-bottom: 48px;
+   padding-top: 80px;
+   margin-bottom: 80px;
    color: #303030;
    font-size: 14px;
    text-align: center;
