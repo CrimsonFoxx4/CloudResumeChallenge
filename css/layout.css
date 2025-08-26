@@ -267,7 +267,7 @@ ul#nav li.current a { color: #F06000; }
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }
 
-.education, .work {
+.education, .work, .project {
    margin-bottom: 48px;
    padding-bottom: 24px;
    /*border-bottom: 1px solid #E8E8E8; */
@@ -288,12 +288,8 @@ ul#nav li.current a { color: #F06000; }
 }
 
 /* ------------------------------------------------------------------ */
-/* Projects Section
+/* Projects Section (now within Resume)
 /* ------------------------------------------------------------------ */
-#projects {
-  scroll-margin-top: 80px; /* Match your header height */
-  
-}
 
 .projects li {
   margin-bottom: 18px;
@@ -316,6 +312,18 @@ ul#nav li.current a { color: #F06000; }
   color: #000000;
 }
 .projects li.highlight p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #666;
+}
+
+.projects h3 {
+  font: 25px/30px 'opensans-bold', sans-serif;
+  margin-bottom: 12px;
+  color: #000000;
+}
+
+.projects p {
   font-size: 15px;
   line-height: 24px;
   color: #666;
