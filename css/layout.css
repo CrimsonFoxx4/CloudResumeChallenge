@@ -178,7 +178,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #0004f0c9; }
+ul#nav li.current a { color: #F06000; }
 
 
 /* ------------------------------------------------------------------ */
@@ -299,7 +299,7 @@ ul#nav li.current a { color: #0004f0c9; }
 }
 
 .projects li strong {
-  color: #11ABB0;
+  color: #000000;
   font-weight: bold;
   font-size: 18px;
   line-height: 1.5;
