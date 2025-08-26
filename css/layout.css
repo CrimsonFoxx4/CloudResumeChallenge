@@ -298,18 +298,19 @@ ul#nav li.current a { color: #F06000; }
 /* Projects Section
 /* ------------------------------------------------------------------ */
 .project {
-  padding: 15px 0;       
-  border-bottom: 1px solid #E8E8E8;  /* light divider line */
-  background: #fff;
+  padding: 30px 0;
+  border-top: 1px solid #E8E8E8; /* same divider as others */
+  background: #fff;              /* force white background */
 }
 
 .project .header-col {
-  padding-top: 5px;      
+  padding-top: 9px;
 }
 
 .project .main-col .row.item {
-  margin-bottom: 15px;   
+  margin-bottom: 25px;
 }
+
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
