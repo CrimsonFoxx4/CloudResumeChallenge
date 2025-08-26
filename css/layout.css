@@ -306,8 +306,15 @@ ul#nav li.current a { color: #F06000; }
   display: inline-block;
 }
 
-.projects li.highlight {
-  margin-top: -6px; /* pulls it up slightly to align with title */
+.projects li.highlight h3 {
+  font: 25px/30px 'opensans-bold', sans-serif;
+  margin-bottom: 12px;
+  color: #000000;
+}
+.projects li.highlight p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #666;
 }
 
 /*----------------------------------------------*/
