@@ -178,7 +178,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
+ul#nav li.current a { color: #0004f0c9; }
 
 
 /* ------------------------------------------------------------------ */
@@ -291,15 +291,6 @@ ul#nav li.current a { color: #F06000; }
 /* Projects Section
 /* ------------------------------------------------------------------ */
 
-.project {
-  padding: 90px 0 60px;
-}
-
-.projects {
-  margin-left: 0;
-  list-style: none;
-}
-
 .projects li {
   margin-bottom: 18px;
   font-size: 15px;
@@ -310,9 +301,14 @@ ul#nav li.current a { color: #F06000; }
 .projects li strong {
   color: #11ABB0;
   font-weight: bold;
+  font-size: 18px;
+  line-height: 1.5;
+  display: inline-block;
 }
 
-
+.projects li.highlight {
+  margin-top: -6px; /* pulls it up slightly to align with title */
+}
 
 /*----------------------------------------------*/
 /*	Skill Bars
