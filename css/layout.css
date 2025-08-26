@@ -267,18 +267,12 @@ ul#nav li.current a { color: #F06000; }
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }
 
-#resume .work {
+.education, .work {
    margin-bottom: 48px;
    padding-bottom: 24px;
-   border-bottom: 1px solid #E8E8E8; 
+   /*border-bottom: 1px solid #E8E8E8; */
+   
 }
-
-#resume .education {
-   margin-bottom: 48px;
-   margin-top: 48px;
-   padding-bottom: 24px;
-   border-bottom: 1px solid #E8E8E8; 
-}   
 #resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
@@ -297,18 +291,35 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 /* Projects Section
 /* ------------------------------------------------------------------ */
-.project {
-  padding: 30px 0;
-  border-top: 1px solid #E8E8E8; /* same divider as others */
-  background: #fff;              /* force white background */
+#projects {
+  scroll-margin-top: 80px; /* Match your header height */
+  
 }
 
-.project .header-col {
-  padding-top: 9px;
+.projects li {
+  margin-bottom: 18px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #666;
 }
 
-.project .main-col .row.item {
-  margin-bottom: 25px;
+.projects li strong {
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.5;
+  display: inline-block;
+}
+
+.projects li.highlight h3 {
+  font: 25px/30px 'opensans-bold', sans-serif;
+  margin-bottom: 12px;
+  color: #000000;
+}
+.projects li.highlight p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #666;
 }
 
 /*----------------------------------------------*/
